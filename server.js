@@ -21,7 +21,7 @@ app.get("/", function (req, res){
     },
     {
       title: "A",
-      message: "morzinho"
+      message: "legria"
     },
     { title: "I",
       message: "sntall ejs"
@@ -31,7 +31,7 @@ app.get("/", function (req, res){
       message: "intaxe simples"
     }
   ];
-  const subtitle = "Uma linguam de modelagem para criação de páginas HTML utilizando JavaScript"
+  const subtitle = "Uma linguam de modelagem para criação de páginas HTML utilizando JavaScript."
   res.render("pages/index", {
     qualitys: items,
     subtitle: subtitle,
