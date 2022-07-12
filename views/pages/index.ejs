@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <%- include('../partials/head'); %>
+  <!-- Só funciona em arquivos ejs que  -->
+  <!-- passa o comando incluir e o arquivo -->
+  <body class="container">
+    <%- include('../partials/header', {pagina: 'Home'}); %>
+    <main>
+      <section>
+        <div class="main-home">
+          <h1>Node com EJS</h1>
+          <p>Feito para testar e trabalhar com arquivos EJS</p>
+          <p><%= subtitle %></p>
+        </div>
+        <ul class="ul-back">
+          <% qualitys.forEach(function(quality){ %> <!-- abriu e fechou -->
+            <li>
+              <strong><%= quality.title %></strong><%= quality.message %>
+            </li>
+          <% }) %>
+          <!-- abriu e fechou -->
+          <!-- quality é cada item-->
+          <!-- EJS com JS, HTML, EJS com JS -->
+        </ul>
+      </section>
+    </main>
+    <%- include('../partials/footer'); %>
+  </body>
+</html>
